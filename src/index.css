@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+:root {
+  --color-black: #131416;
+  --color-purple: #5952e4;
+  --color-white: #faf7fe;
+  --color-gray: #d3d3d4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* 992px */
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 425px */
+@media only screen and (max-width: 26.5625em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  gap: 10rem;
+  padding: 4rem 15rem;
+  padding-top: 10rem;
+}
+
+/* 1130px */
+@media only screen and (max-width: 70.625em) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 620*/
+@media only screen and (max-width: 38.75em) {
+  main {
+    padding: 4rem 2rem;
+  }
 }

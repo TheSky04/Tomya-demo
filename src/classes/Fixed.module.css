@@ -1,0 +1,100 @@
+.kvk {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e2e3e3;
+  padding: 1rem 10rem;
+  opacity: 0.8;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*1200px*/
+@media only screen and (max-width: 75em) {
+  .kvk {
+    padding: 1rem;
+  }
+
+  .kvk button {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+.kvk p {
+  font-size: 1.2rem;
+}
+
+.kvk button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  background-color: var(--color-purple);
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.help {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome {
+  background-color: #fff;
+  width: 20rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+}
+
+.iconContainer {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: var(--color-purple);
+
+  display: grid;
+  place-items: center;
+  transition: all 0.5s;
+}
+
+.iconContainer:hover {
+  box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.7);
+}
+
+.icon {
+  color: #fff;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  background-color: green;
+  padding: 1.5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all 0.3s;
+}
+
+.whatsappIcon {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.whatsapp:hover {
+  box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}

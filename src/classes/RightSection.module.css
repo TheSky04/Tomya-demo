@@ -1,0 +1,42 @@
+.rightSection {
+}
+
+.rightSection h1 {
+  color: #24242a;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.hr {
+  border: none;
+  border-top: 2px solid #ebebeb;
+  margin: 1rem 0;
+}
+
+.rightSection h3 {
+  font-size: 2.5rem;
+  color: #7671ec;
+  margin-bottom: 2rem;
+}
+
+.rightSection h6 {
+  font-size: 2rem;
+  color: #24242a;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.rightSection img {
+  border-radius: 5px;
+}
+
+/* 420px */
+@media only screen and (max-width: 26.25em) {
+  .rightSection h3 {
+    font-size: 2rem;
+  }
+
+  .rightSection h6 {
+    font-size: 1.5rem;
+  }
+}

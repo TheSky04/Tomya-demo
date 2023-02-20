@@ -1,0 +1,94 @@
+.crypto {
+  background-color: #fff;
+  width: 100%;
+  min-height: 40rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 10;
+
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
+}
+
+.crypto h1 {
+  color: var(--color-gray);
+  font-size: 5.2rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.hr {
+  color: var(--color-gray);
+  border: none;
+  border-top: 1px solid var(--color-gray);
+}
+
+.coins {
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.icon {
+  background-color: var(--color-purple);
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.crypto a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flex:hover {
+  background-color: #edecfb;
+}
+
+@media only screen and (max-width: 35.6875em) {
+  .crypto h1 {
+    font-size: 2.5rem;
+  }
+
+  .hr {
+    margin-bottom: 0.5rem;
+  }
+
+  .crypto {
+    min-height: 30rem;
+    font-size: 0.5rem;
+  }
+
+  .coins {
+    padding: 0;
+    gap: 0.2rem;
+  }
+
+  .icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .flex {
+    padding: 0.5rem;
+  }
+}

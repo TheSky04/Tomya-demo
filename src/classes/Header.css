@@ -1,0 +1,78 @@
+.header {
+  background-color: var(--color-black);
+  padding: 4rem 15rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  min-width: 50rem;
+  background: url(https://www.tomya.com/assets/img/subpages/sub/brem-bg.svg)
+    no-repeat;
+  height: 2rem;
+  position: absolute;
+  top: 17.3rem;
+  left: 15rem;
+}
+
+/* 1222px */
+@media only screen and (max-width: 76.375em) {
+  .header::after {
+    top: 18rem;
+  }
+}
+
+/* 1035px */
+@media only screen and (max-width: 64.6875em) {
+  .header::after {
+    top: 19rem;
+    width: 30rem;
+  }
+}
+
+/* 994px */
+@media only screen and (max-width: 62.125em) {
+  .header::after {
+    top: 18.1rem;
+    width: 30rem;
+  }
+}
+
+/* 830px */
+@media only screen and (max-width: 51.875em) {
+  .header {
+    padding: 4rem 5rem;
+  }
+
+  .header::after {
+    top: 17rem;
+    width: 25rem;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .top {
+    margin-bottom: 0;
+  }
+
+  .header::after {
+    display: none;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top img {
+  width: 17rem;
+}

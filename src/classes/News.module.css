@@ -1,0 +1,31 @@
+.img {
+  max-width: 60rem;
+}
+
+/* 620px */
+/* @media only screen and (max-width: 38.75em) {
+  .img {
+    max-width: 50rem;
+  }
+} */
+
+/* 515px */
+@media only screen and (max-width: 32.1875em) {
+  .img {
+    max-width: 50rem;
+  }
+}
+
+/* 370px */
+@media only screen and (max-width: 23.4375em) {
+  .img {
+    max-width: 45rem;
+  }
+}
+
+/* 300px */
+@media only screen and (max-width: 23.4375em) {
+  .img {
+    max-width: 35rem;
+  }
+}
